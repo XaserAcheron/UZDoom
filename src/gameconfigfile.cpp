@@ -170,6 +170,7 @@ FGameConfigFile::FGameConfigFile ()
 	{
 		SetSection ("FileSearch.Directories", true);
 		SetValueForKey ("Path", "$DOOMWADDIR", true);
+		SetValueForKey ("PathList", "$DOOMWADPATH", true);
 #ifdef __APPLE__
 		SetValueForKey ("Path", user_docs.GetChars(), true);
 		SetValueForKey ("Path", user_app_support.GetChars(), true);
